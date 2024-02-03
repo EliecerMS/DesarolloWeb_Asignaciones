@@ -14,6 +14,10 @@ body{
     overflow-x: hidden;
 }
 
+.header{
+    width: 0;
+}
+
 footer p{
     color:white;
 }
@@ -32,14 +36,15 @@ h2{
     font-size: 24px;
 }
 
+/*Index style*/
 
 .trending{
     background-color: black;
 }
 
 .article_list{
-  padding: 10px;
-  display: flex;
+    padding: 10px;
+    display: flex;
 }
 
 
@@ -66,4 +71,110 @@ h2{
 }
 
 
+/*ejemplo 2 style*/
+.img_container {
+    display: flex; /* para que dentro de asi se puede acomodar las imagenes una al lado de otra */
+    justify-content: center;
 
+}
+
+.column {
+    max-width: 300px; /* Ajusta el ancho de cada columna como se requiera */
+    margin: 0 10px; /* Ajusta el margen entre las columnas */
+    text-align: center;
+}
+
+.colum img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+.text_container {
+    display: flex;
+    background-color: #828385;
+}
+
+.text_column {
+    flex: 1; /* ancho igual para ambas columnas, adjustar preferencia */
+    padding: 60px; /* padding para espacio */
+
+}
+
+.text_column p{
+    color: white;
+
+}
+
+/*ejemplo3 style*/
+
+.flex_body{
+    display: flex;/*para posicionar contenido una al lado del otro*/
+    margin: 0;
+}
+.singup_article{
+    padding: 10px;
+    display: flex;
+}
+
+.signup_form_container{
+    width: 700px;
+    text-align: center;
+}
+
+.singup_img_container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section_right {
+    flex: 1; /* Toma la parte derecha de pantalla*/
+    align-items: center; 
+    background-color: #787878; 
+}
+
+.aside_left {
+    width: 500px; /* Toma la parte izquierda */
+    padding: 20px;
+    background-color: #535353;
+
+}
+
+#singup_content{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+
+/*ejemplo  4*/
+
+thead{
+    color: white;
+}
+tbody td{
+    padding: 15px;
+    
+}
+
+tbody td a{
+   text-decoration: none;
+   color: white;
+    
+}
+
+tbody tr{
+   background-color: #2e2e2e;
+   color: white;
+   border: 1px;
+   border-color: black;
+}
+
+tbody tr:hover{
+   background-color: gray;
+   color: white;
+}
