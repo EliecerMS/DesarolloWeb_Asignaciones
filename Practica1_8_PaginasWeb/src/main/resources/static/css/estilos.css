@@ -7,8 +7,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Author     : eliec
 */
 
+body{
+    background-color: #3d3e40;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
 footer p{
-    background-color: blue;
     color:white;
 }
 
@@ -16,45 +22,48 @@ h1,h2{
     text-align: center;
 }
 h1{
-    background-color: black;
+
     color: white;
     font-size: 32px;
 }
 
 h2{
-    background-color: green;
-    color: yellow;
+    color: white;
     font-size: 24px;
 }
 
-.aviso{
-    background-color: green;
-    color:white;
-}
 
-#btnAlgo{
-    
-}
-
-table{
-    width: 80%;
-}
-
-thead tr{
+.trending{
     background-color: black;
+}
+
+.article_list{
+  padding: 10px;
+  display: flex;
+}
+
+
+.article_list:nth-child(odd){
+    background-color: #828385;
     color: white;
 }
 
-td{
+.article_list:nth-child(even){
+    background-color: #3d3e40;
+    color: white;
+}
+
+.article_list_imgtitle{
+    width: 410px;
     text-align: center;
 }
 
-tbody tr:nth-child(odd){
-    background-color: white;
-    color: black;
+.article_list_description{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-tbody tr:nth-child(even){
-    background-color: gray;
-    color: white;
-}
+
+
 
